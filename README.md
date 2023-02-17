@@ -23,12 +23,6 @@ Ensure you have PHP + Composer Installed, then run:
 composer install
 ```
 
-Install serverless for deploying
-
-```
-npm i -g serverless
-```
-
 Install and configure the Serverless Framework
 
 ```
