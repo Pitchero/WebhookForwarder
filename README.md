@@ -1,8 +1,11 @@
 ### GoCardless Webhook Forwarder
 
-**Initial Setup**
+PHP LAMBDA + BREF project to forward GoCardless webhooks to different environments.
 
-Basic PHP LAMBDA + BREF project to forward GoCardless webhooks to different environments.
+![template](https://user-images.githubusercontent.com/10387015/219708077-97d8159a-8c4d-4a34-9130-b9c8101e264e.png)
+
+
+**Initial Setup**
 
 - Fill out your GoCardless webhook creds within your `.env` file
 - Fill out your Webhook URLS within your `.receivers` file
