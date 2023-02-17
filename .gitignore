@@ -1,1 +1,5 @@
 vendor
+.serverless
+.env
+.receivers
+.idea

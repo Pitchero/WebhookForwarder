@@ -4,17 +4,20 @@ provider:
     name: aws
     region: eu-west-1
     runtime: provided.al2
-    deploymentMethod: direct # fastest deployment method
 
 plugins:
     - ./vendor/bref/bref
 
 functions:
-    hello:
+    api:
         handler: index.php
-        description: ''
+        memorySize: 512
+        description: 'Receive an API response from GoCardless'
+        timeout: 5 # in seconds (API Gateway has a timeout of 29 seconds)
         layers:
             - ${bref:layer.php-81}
+        events:
+          - httpApi: '*'
 
 # Exclude files from deployment
 package:
